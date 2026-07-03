@@ -16,7 +16,7 @@ dotenv.config();
 const PORT = process.env.PORT || 4001;
 const app = express();
 
-const whiteList = [process.env.ORIGIN1, process.env.ORIGIN2, process.env.ORIGIN3];
+const whiteList = [process.env.ORIGIN1, process.env.ORIGIN2, process.env.ORIGIN3, process.env.ORIGIN4];
 app.use(cors({
   origin: function(origin, callback){
     if (origin) console.log("Petición desde:", origin);
